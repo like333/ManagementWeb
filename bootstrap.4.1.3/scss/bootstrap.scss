@@ -7,7 +7,7 @@
 
 @import "functions";
 @import "variables";
-@import "mixins";
+@import "_mixins.scss";
 @import "root";
 @import "reboot";
 @import "type";
@@ -38,5 +38,5 @@
 @import "tooltip";
 @import "popover";
 @import "carousel";
-@import "utilities";
+@import "_utilities.scss";
 @import "print";
