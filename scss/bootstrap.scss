@@ -1,10 +1,26 @@
 // bootstrap.scss
 
-// 自定义主题
-
 // required
 @import "../bootstrap.4.1.3/scss/bootstrap";
 @import "../bootstrap.4.1.3/scss/bootstrap-grid";
 @import "../bootstrap.4.1.3/scss/bootstrap-reboot";
 
+
+// 自定义主题
+/*
+* _form.scss
+*/
+@mixin form-control-focus() {
+    &:focus { 
+      @if $enable-shadows {
+        box-shadow: $input-box-shadow, $input-focus-box-shadow;
+      } @else {
+        box-shadow: none;
+      }
+    }
+  }
+.form-control {
+    font-size: $font-size-sm; 
+    @include form-control-focus()
+}
 
