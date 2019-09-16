@@ -59,3 +59,33 @@ body{
 [role="main"]{
     padding-top: 66px;
 }
+
+
+/*
+* bootstrap时间插件图标
+*/
+@font-face {
+    font-family: 'Glyphicons Halflings';
+    src: url('../bootstrap.4.1.3/bootstrap-datepicker/fonts/glyphicons-halflings-regular.eot');
+    src: url('../bootstrap.4.1.3/bootstrap-datepicker/fonts/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'), 
+    url('../bootstrap.4.1.3/bootstrap-datepicker/fonts/glyphicons-halflings-regular.woff') format('woff'), 
+    url('../bootstrap.4.1.3/bootstrap-datepicker/fonts/glyphicons-halflings-regular.ttf') format('truetype'), 
+    url('../bootstrap.4.1.3/bootstrap-datepicker/fonts/glyphicons-halflings-regular.svg#glyphicons-halflingsregular') format('svg');
+  }
+  
+  .glyphicon {
+    position: relative;
+    top: 1px;
+    display: inline-block;
+    font-family: 'Glyphicons Halflings';
+    -webkit-font-smoothing: antialiased;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1;
+  }
+  .glyphicon-arrow-left:before {
+    content: "\e091";
+  }
+  .glyphicon-arrow-right:before {
+    content: "\e092";
+  }
